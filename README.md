@@ -26,9 +26,12 @@
 <div>
 	<h2>주요 기능 소개</h2>
 	<h4>아이디 중복확인</h4>
-	<img src=""/>
+	<img src="https://user-images.githubusercontent.com/94223526/209548316-10b7a171-cde7-45f7-a2c8-cb993319d946.gif"/>
 	<h4>우편번호 검색</h4>
 	<img src="https://user-images.githubusercontent.com/94223526/209548606-d88cd07c-1fc8-4e25-8e7a-2d8a82feb09c.gif"/>
+	<h4>게시판 글쓰기</h4>
+	
+	<h4>자료실 첨부파일 수정</h4>
 </div>
 <div align=center>
 	<h3>📚 Tech Stack 📚</h3>
