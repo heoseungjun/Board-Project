@@ -1,6 +1,15 @@
 <div align=center>
 	<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=Board%20Project&fontSize=90" />	
 </div>
+<div>
+	<h2>프로젝트 소개</h2>
+	<p>백엔드 개발 수업을 수강하면서 게시판 만들기 사이드 프로젝트를 수행했습니다. 회원가입 및 로그인, 게시판에서 글 등록/수정/삭제, 자료실 첨부파일 등록/수정/삭제 등을 구현했습니다.</p>
+</div>
+<div>
+	<h2>데이터 베이스 설계</h2>
+	<p>eXERD를 이용하여 게시판 데이터베이스를 설계했습니다. 다음은 사용자 테이블(member), 게시판 테이블(board), 자료실 테이블(data), 댓글 테이블(replyBoard), 주소 테이블(zipcodeTbl)의 모습입니다.</p>
+	<img src="C:\etc\게시판 DB.png"/>
+</div>
 <div align=center>
 	<h3>📚 Tech Stack 📚</h3>
 	<p>✨ Platforms & Languages ✨</p>
