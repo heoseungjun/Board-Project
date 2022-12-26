@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.word-cut{
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.boardList,.pageDiv>ul{
+	overflow:auto;
+}
+.boardList>li>a,.container>a{
+	color:black;
+}
+.boardList>li{
+	float:left;
+	height:40px;
+	line-height:40px;
+	width:10%;
+	border-bottom:1px solid #ddd;
+}
+.boardList>li:nth-child(5n+2){
+	width:60%;
+}
+li{
+	list-style-type:none;
+}
+
+/*페이징*/
+.pageDiv{
+	padding:20px 0px;
+	text-align:center;
+}
+.pageDiv>ul>li{
+	float:left;
+	padding:5px 10px;
+}
+
+/*검색어*/
+.searchDiv{
+	text-align:center;
+}

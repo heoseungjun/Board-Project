@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ <mapper namespace="com.campus.myapp.dao.DataDAO">
+ 	<insert id="dataInsert">
+ 		insert into data(no,subject,content,userid,filename1
+ 		<if test="filename2!=null">
+ 		,filename2
+ 		</if>)
+ 		
+ 		values(board_sq.nextval,#{subject},#{content},#{userid},#{filename1}
+ 		<if test="filename2!=null">
+ 		,#{filename2}
+ 		</if>)
+ 	</insert>
+ 	<select id="dataSelect" resultType="com.campus.myapp.vo.DataVO">
+ 		select no,subject,content,userid,hit,to_char(writedate,'MM-DD HH:MI') writedate,filename1,filename2 
+ 		from data order by no desc
+ 	</select>
+ 	<select id="dataView" resultType="com.campus.myapp.vo.DataVO" parameterType="int">
+ 		select no,userid,writedate,hit,subject,content,filename1,filename2 from data where no=#{param1}
+ 	</select>
+ 	<select id="selectFilename" resultType="com.campus.myapp.vo.DataVO">
+ 		select filename1,filename2 from data where no=${param1}
+ 	</select>
+ 	<update id="dataUpdate">
+ 		update data set subject=#{subject}, content=#{content}, filename1=#{filename1}, 
+ 		<choose>
+	 		<when test="filename2!=null">
+	 			filename2=#{filename2}
+	 		</when>
+	 		<otherwise>
+	 			filename2=null
+	 		</otherwise>
+ 		</choose>
+ 		where no=#{no} and userid=#{userid}
+ 	</update>
+ 	<delete id="dataDelete">
+ 		delete from data where no=#{param1} and userid=${param2}
+ 	</delete>
+ </mapper>

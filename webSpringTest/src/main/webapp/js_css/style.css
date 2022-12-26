@@ -1,0 +1,40 @@
+@charset "UTF-8";
+body,ul,li{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+.container{
+	width:1000px;
+	margin:0 auto;
+}
+a:link,a:visited,a:hover{
+	text-decoration:none;
+	color:#ddd;
+}
+
+/*Top*/
+.topMenu>ul{
+	height:50px;
+	background-color:black;
+}
+.topMenu>ul>li{
+	float:left;
+	list-style-type:none;
+	height:50px;
+	line-height:50px;
+	padding:0 100px;
+	font-family:나눔고딕;
+}
+.topMenu>ul>li,.topMenu>ul>li>a{
+	color:white;
+}
+
+/*Bottom*/
+.bottom{
+	background-color:black;
+	color:white;
+	text-align:center;
+	height:80px;
+	line-height:80px;
+}

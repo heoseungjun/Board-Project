@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.campus.myapp.dao.ReplyBoardDAO">
+	<insert id="replyBoardWrite">
+		insert into replyboard(replyno,no,userid,coment)
+		values(board_sq.nextVal,#{no},#{userid},#{coment})
+	</insert>
+	<select id="replyAllSelect" resultType="com.campus.myapp.vo.ReplyBoardVO">
+		select replyno,no,coment,userid,writedate from replyboard
+		where no=${param1} order by replyno desc
+	</select>
+	<update id="replyEditOk">
+		update replyboard set coment=#{coment} 
+		where replyno=#{replyno} and userid=#{userid}
+	</update>
+</mapper>

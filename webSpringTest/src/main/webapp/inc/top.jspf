@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<link rel="stylesheet" href="<%=request.getContextPath() %>/js_css/style.css" type="text/css"/>
+</head>
+<body>
+<div class="topMenu">
+	<ul>
+		<li><a href="/myapp/">홈</a></li>
+		<c:if test="${logStatus!='Y'}">
+			<li><a href="/myapp/member/login">로그인</a></li>
+			<li><a href="/myapp/member/memberForm">회원가입</a></li>
+		</c:if>
+		<c:if test="${logStatus=='Y'}">
+			<li>${logname}<a href="/myapp/member/logout"> 로그아웃</a></li>
+			<li><a href="/myapp/member/selectForm">회원정보수정</a></li>
+		</c:if>
+		<li><a href="/myapp/board/boardList">게시판</a></li>
+		<li><a href="/myapp/data/dataList">자료실</a></li>
+	</ul>
+</div>
