@@ -30,7 +30,7 @@
 	<h4>우편번호 검색</h4>
 	<img src="https://user-images.githubusercontent.com/94223526/209548606-d88cd07c-1fc8-4e25-8e7a-2d8a82feb09c.gif"/>
 	<h4>게시판 글쓰기</h4>
-	
+	<img src="https://user-images.githubusercontent.com/94223526/209549017-3791bc85-f219-4a85-bc01-8daf3d6b68fa.gif"/>
 	<h4>자료실 첨부파일 수정</h4>
 </div>
 <div align=center>
